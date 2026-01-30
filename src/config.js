@@ -5,10 +5,10 @@ module.exports = [
     // 生成json时的前缀
     prefix: 'heo-',
     // 图片基路径
-    baseUrl: 'https://cdn.jsdelivr.net/gh/eryajf/emotion_generate/dist/heo/image',
+    baseUrl: 'https://cdn.jsdelivr.net/gh/yanyaoli/emotion_generate/dist/heo/image',
     twikoo: {
       // twikoo 生成的tab栏名称
-      name: `<img src="${'https://cdn.jsdelivr.net/gh/eryajf/emotion_generate/dist/heo/image'}/害羞.png" style="width: 30px;top: 4px;position: relative;" title="Heo">`
+      name: `<img src="${'https://cdn.jsdelivr.net/gh/yanyaoli/emotion_generate/dist/heo/image'}/害羞.png" style="width: 30px;top: 4px;position: relative;" title="Heo">`
     },
     artalk: {
       // artalk 生成的tab栏名称
@@ -25,7 +25,7 @@ module.exports = [
   {
     path: 'aru',
     prefix: 'aru-',
-    baseUrl: 'https://cdn.jsdelivr.net/gh/eryajf/emotion_generate/dist/aru/image',
+    baseUrl: 'https://cdn.jsdelivr.net/gh/yanyaoli/emotion_generate/dist/aru/image',
     twikoo: {
       name: `阿鲁`
     },
@@ -43,7 +43,7 @@ module.exports = [
   {
     path: 'kcoin',
     prefix: 'kcoin-',
-    baseUrl: 'https://cdn.jsdelivr.net/gh/eryajf/emotion_generate/dist/kcoin/image',
+    baseUrl: 'https://cdn.jsdelivr.net/gh/yanyaoli/emotion_generate/dist/kcoin/image',
     twikoo: {
       name: `酷币`
     },
@@ -61,7 +61,7 @@ module.exports = [
   {
     path: 'bili_tv',
     prefix: 'btv-',
-    baseUrl: 'https://cdn.jsdelivr.net/gh/eryajf/emotion_generate/dist/bili_tv/image',
+    baseUrl: 'https://cdn.jsdelivr.net/gh/yanyaoli/emotion_generate/dist/bili_tv/image',
     twikoo: {
       name: `哔哩TV`
     },
@@ -79,7 +79,7 @@ module.exports = [
   {
     path: 'douyin',
     prefix: 'douyin-',
-    baseUrl: 'https://cdn.jsdelivr.net/gh/eryajf/emotion_generate/dist/douyin/image',
+    baseUrl: 'https://cdn.jsdelivr.net/gh/yanyaoli/emotion_generate/dist/douyin/image',
     twikoo: {
       name: `抖音`
     },
@@ -97,7 +97,7 @@ module.exports = [
   {
     path: 'huaji',
     prefix: 'huaji-',
-    baseUrl: 'https://cdn.jsdelivr.net/gh/eryajf/emotion_generate/dist/huaji/image',
+    baseUrl: 'https://cdn.jsdelivr.net/gh/yanyaoli/emotion_generate/dist/huaji/image',
     twikoo: {
       name: `滑稽`
     },
@@ -115,7 +115,7 @@ module.exports = [
   {
     path: 'parrot',
     prefix: 'parrot-',
-    baseUrl: 'https://cdn.jsdelivr.net/gh/eryajf/emotion_generate/dist/parrot/image',
+    baseUrl: 'https://cdn.jsdelivr.net/gh/yanyaoli/emotion_generate/dist/parrot/image',
     twikoo: {
       name: `小鹦鹉`
     },
@@ -133,7 +133,7 @@ module.exports = [
   {
     path: 'other',
     prefix: 'other-',
-    baseUrl: 'https://cdn.jsdelivr.net/gh/eryajf/emotion_generate/dist/other/image',
+    baseUrl: 'https://cdn.jsdelivr.net/gh/yanyaoli/emotion_generate/dist/other/image',
     twikoo: {
       name: `其他`
     },
@@ -151,7 +151,7 @@ module.exports = [
   {
     path: 'blob',
     prefix: 'blob-',
-    baseUrl: 'https://cdn.jsdelivr.net/gh/eryajf/emotion_generate/dist/blob/image',
+    baseUrl: 'https://cdn.jsdelivr.net/gh/yanyaoli/emotion_generate/dist/blob/image',
     twikoo: {
       name: `Blob`
     },
