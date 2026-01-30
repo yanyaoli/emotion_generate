@@ -33,19 +33,25 @@ function writeFile(fileName, pathTarget, content) {
 }
 function copyDir(src, dist) {
   const imagePath = path.resolve(__dirname, `../../dist/${dist}/image`)
-  const isImagePath = fs.existsSync(imagePath)
-  if (!isImagePath) {
-    fs.mkdirSync(imagePath)
+  if (!fs.existsSync(imagePath)) {
+    fs.mkdirSync(imagePath, { recursive: true })
   }
 
-  const srcPath = path.resolve(__dirname, `../../src/image/${src}/*`)
-  const distPath = path.resolve(__dirname, `../../dist/${dist}/image/`)
-  child_process.exec(`cp ${srcPath} ${distPath}`, (err, stdout, stderr) => {
-    if (err) {
-      //发生一些错误
-      console.error('error', err)
-    }
-  })
+  try {
+    const srcDir = path.resolve(__dirname, `../../src/image/${src}`)
+    const files = fs.readdirSync(srcDir)
+    files.forEach((file) => {
+      const srcFile = path.resolve(srcDir, file)
+      const distFile = path.resolve(imagePath, file)
+      try {
+        fs.copyFileSync(srcFile, distFile)
+      } catch (e) {
+        console.error('copy file error', srcFile, e)
+      }
+    })
+  } catch (e) {
+    console.error('copyDir error', e)
+  }
 }
 
 module.exports = { getImageFileList, writeFile, copyDir }

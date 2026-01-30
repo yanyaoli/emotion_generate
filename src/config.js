@@ -77,6 +77,24 @@ module.exports = [
     }
   },
   {
+    path: 'douyin',
+    prefix: 'douyin-',
+    baseUrl: 'https://cdn.jsdelivr.net/gh/eryajf/emotion_generate/dist/douyin/image',
+    twikoo: {
+      name: `抖音`
+    },
+    artalk: {
+      name: `抖音`
+    },
+    waline: {
+      name: '抖音',
+      icon: 'zan.png'
+    },
+    discuss: {
+      name: `抖音`
+    }
+  },
+  {
     path: 'huaji',
     prefix: 'huaji-',
     baseUrl: 'https://cdn.jsdelivr.net/gh/eryajf/emotion_generate/dist/huaji/image',
